@@ -1,0 +1,23 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '10.0'  # Update the platform to a more recent version if needed
+
+target 'scorecardmobile' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # React Native dependencies
+  pod 'React', :path => '../node_modules/react-native'
+  pod 'React-Core', :path => '../node_modules/react-native'
+  # pod 'React-DevSupport', :path => '../node_modules/react-native/React'
+  pod 'React-RCTText', :path => '../node_modules/react-native/Libraries/Text'
+  pod 'React-RCTImage', :path => '../node_modules/react-native/Libraries/Image'
+  pod 'React-RCTNetwork', :path => '../node_modules/react-native/Libraries/Network'
+  # pod 'React-RCTWebSocket', :path => '../node_modules/react-native/Libraries/WebSocket'
+  pod 'React-RCTActionSheet', :path => '../node_modules/react-native/Libraries/ActionSheetIOS'
+  pod 'React-RCTAnimation', :path => '../node_modules/react-native/Libraries/NativeAnimation'
+  pod 'React-RCTAnimation', :path => '../node_modules/react-native/Libraries/NativeAnimation'
+
+  # Expo dependencies
+  
+  # Add any additional pods you might need
+end

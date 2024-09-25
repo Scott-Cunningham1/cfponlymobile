@@ -1,0 +1,23 @@
+# Use the official Node.js LTS image as a base
+FROM node:lts-bullseye
+
+# Set working directory
+WORKDIR /app
+
+# Install React Native CLI globally
+RUN npm install -g react-native-cli
+
+# Copy package.json and package-lock.json to the working directory
+COPY package*.json ./
+
+# Install dependencies
+RUN npm install
+
+# Expose necessary ports for Metro Bundler and debugging (adjust as needed)
+EXPOSE 8081
+EXPOSE 19000
+EXPOSE 19001
+EXPOSE 19002
+
+# Command to start Metro Bundler and run the React Native app
+CMD npm start
